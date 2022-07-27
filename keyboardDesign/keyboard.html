@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="keyboard.css" />
+    <title>Keyboard</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <div class="keyboard-container">
+      <div class="row">
+        <button class="btn regular-button">
+          <div class="default-option">`</div>
+          <div class="second-option lighter-font">~</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">1</div>
+          <div class="second-option lighter-font">!</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">2</div>
+          <div class="second-option lighter-font">@</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">3</div>
+          <div class="second-option lighter-font">#</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">4</div>
+          <div class="second-option lighter-font">$</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">5</div>
+          <div class="second-option lighter-font">%</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">6</div>
+          <div class="second-option lighter-font">^</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">7</div>
+          <div class="second-option lighter-font">&</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">8</div>
+          <div class="second-option lighter-font">*</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">9</div>
+          <div class="second-option lighter-font">(</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">0</div>
+          <div class="second-option lighter-font">)</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">-</div>
+          <div class="second-option lighter-font">_</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">=</div>
+          <div class="second-option lighter-font">+</div>
+        </button>
+        <button class="btn" id="delete-key">del</button>
+      </div>
+
+      <div class="row">
+        <button class="btn">tab</button>
+        <button class="btn regular-button">
+          <div class="normal-character">q</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">w</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">e</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">r</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">t</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">y</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">u</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">i</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">o</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">p</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">[</div>
+          <div class="second-option lighter-font">{</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">]</div>
+          <div class="second-option lighter-font">}</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">\</div>
+          <div class="second-option lighter-font">|</div>
+        </button>
+      </div>
+
+      <div class="row">
+        <button class="btn" id="capsL">capsL</button>
+        <button class="btn regular-button">
+          <div class="normal-character">a</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">s</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">d</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">f</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">g</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">h</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">j</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">k</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">l</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">;</div>
+          <div class="second-option lighter-font">:</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">'</div>
+          <div class="second-option lighter-font">"</div>
+        </button>
+        <button class="btn shift-btn" id="enter">enter</button>
+      </div>
+
+      <div class="row">
+        <button class="btn shift-btn shift" id="shift">shift</button>
+        <button class="btn regular-button">
+          <div class="normal-character">z</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">x</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">c</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">v</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">b</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">n</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="normal-character">m</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">,</div>
+          <div class="second-option lighter-font"><</div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">.</div>
+          <div class="second-option lighter-font">></div>
+        </button>
+        <button class="btn regular-button">
+          <div class="default-option">/</div>
+          <div class="second-option lighter-font">?</div>
+        </button>
+        <button class="btn regular-button">
+          <img src="../Assets/uparrow.png" alt="arrowup" />
+        </button>
+        <button class="btn shift">shift</button>
+      </div>
+
+      <div class="row">
+        <button class="btn">ctrl</button>
+        <button class="btn">fn</button>
+        <button class="btn">wink</button>
+        <button class="btn">alt</button>
+        <button class="btn space-btn" id="space">space</button>
+        <button class="btn">alt</button>
+        <button class="btn">ctrl</button>
+        <button class="btn">
+          <img src="../Assets/down-left.png" alt="down-left" />
+        </button>
+        <button class="btn">
+          <img src="../Assets/down.png" alt="down" />
+        </button>
+        <button class="btn">
+          <img src="../Assets/down-right.png" alt="dowen-right" />
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="../dir/logic.js"></script>
+  <script src="../dir/storage.js"></script>
+  <script src="../dir/StorageProvider/localStorage.js"></script>
+  <script src="../dir/StorageProvider/storageProviderInterface.js"></script>
+  <script src="../dir/ui.js"></script>
+  <script src="../dir/index.js"></script>
+</html>

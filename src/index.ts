@@ -1,0 +1,2 @@
+startKeyboard(localStorageManagment)
+startUi(localStorageManagment)
